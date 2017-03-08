@@ -6,6 +6,7 @@ class MainClass
 {
 	static int Main()
 	{
+		var fps = new FPS();
 		var window = new RenderWindow(new VideoMode(1600, 1000), "Platformer");
 		var tileMap = new TileMap(0, 0);
 		var tileMap1 = new TileMap(4, 0);
@@ -28,6 +29,8 @@ class MainClass
 		while (window.IsOpen)
 		{
 			window.DispatchEvents();
+			Console.WriteLine(fps.getFPS());
+			fps.update();
 			window.Clear();
 			window.Draw(tileMap);
 			window.Draw(tileMap1);
