@@ -9,7 +9,7 @@ class MainClass
 		var fps = new FPS();
 		var window = new RenderWindow(new VideoMode(1600, 1000), "Platformer");
 		var tileMap = new TileMap(0, 0);
-		var tileMap1 = new TileMap(4, 0);
+		var tileMap1 = new TileMap(4, 100);
 		var map = new List<List<Int32>>();
 		var buff = new List<Int32>();
 		buff.Add(4);buff.Add(1);buff.Add(2);buff.Add(0); buff.Add(3); buff.Add(2);buff.Add(0); buff.Add(1); buff.Add(4);
