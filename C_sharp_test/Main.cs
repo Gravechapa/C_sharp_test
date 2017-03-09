@@ -7,7 +7,7 @@ class MainClass
 	static int Main()
 	{
 		var fps = new FPS();
-		var window = new RenderWindow(new VideoMode(1600, 1000), "Platformer");
+		var window = new RenderWindow(new VideoMode(1600, 1000), "C_sharp_test");
 		var tileMap = new TileMap(0, 0);
 		var tileMap1 = new TileMap(4, 100);
 		var map = new List<List<Int32>>();
